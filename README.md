@@ -16,3 +16,19 @@ Common English Contractions
 * 'll
 * 've
 * 're
+---
+Formatting
+```
+[^\r\n\p{L}\p{N}]?+\p{L}+
+```
+* A character class negation: matches any single character that is NOT a carriage return (\r), newline (\n), any Unicode letter (\p{L}), or any Unicode number (\p{N}).
+* Possessive quantifier (?+) matches zero or one character from negated set, without backtracking.
+* (\p{L}+) matches one or more Unicode letters.
+---
+```
+Small numbers:
+```
+|\p{N}{1,3}
+```
+* Matches any numeric script
+* Matches previous token between 1 to 3 times, as many times as possible (greedy).
