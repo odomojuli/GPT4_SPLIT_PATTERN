@@ -57,8 +57,8 @@ Sub-patterns:
 * Space followed by `?` quantifier, (zero or one instances of space)
 * Negation `^` of set:
   * `\s` (whitespace characters)
-  * `p{L} (any Unicode letter)
-  * `p{N} (any Unicode number)
+  * `p{L}` (any Unicode letter)
+  * `p{N}` (any Unicode number)
 * `++`, one or more, no backracking
 * `[\r\n]*`, matches zero or more carriage returns (`\r`) or newline (`\n`).
 
