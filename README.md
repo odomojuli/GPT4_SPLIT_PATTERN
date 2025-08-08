@@ -37,7 +37,7 @@ Sub-patterns:
 * A character class negation: matches any single character that is NOT a carriage return (\r), newline (\n), any Unicode letter (\p{L}), or any Unicode number (\p{N}).
 * Possessive quantifier (?+) matches zero or one character from negated set, without backtracking.
 * (\p{L}+) matches one or more Unicode letters.
-* 
+
 ---
 
 ## Small numbers:
