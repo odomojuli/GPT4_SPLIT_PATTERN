@@ -55,3 +55,19 @@ GPT4_SPLIT_PATTERN = r"""'(?i:[sdmt]|ll|ve|re)|[^\r\n\p{L}\p{N}]?+\p{L}+|\p{N}{1
 
 ---
 
+## Whitespace sub-cases
+
+```
+\s*[\r\n]
+```
+* Matches optional whitespace followed by a line break.
+
+```
+\s+(?!\S)
+```
+* Matches whitespace only if not followed by a non-whitespace character (trailing spaces).
+
+```
+\s+
+```
+* Matches one or more whitespace characters.
